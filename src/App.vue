@@ -12,5 +12,8 @@ configure({ tagId: 'G-CQCJ1860S7' });
     <header>
       <DiyExtrasNavBar />
     </header>
+    <main>
+      <DiyExtrasIntro />
+    </main>
   </BApp>
 </template>
