@@ -19,6 +19,7 @@
     "bootstrap": "^5.3.8",
     "bootstrap-vue-next": "^0.40.6",
     "pinia": "^3.0.3",
+    "video.js": "^8.23.4",
     "vue": "^3.5.22",
     "vue-gtag": "^3.6.2"
   },

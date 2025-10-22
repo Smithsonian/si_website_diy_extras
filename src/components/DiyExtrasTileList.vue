@@ -22,7 +22,7 @@
                 <p class="mb-0">Running time: 6:54</p>
               </DiyExtrasTile>
             </a>
-            <a href="">
+            <a href="" @click="handleLopezMoralesClick">
               <DiyExtrasTile
                 title="Mercedes López-Morales: Search for Earth-like Exoplanets"
                 :img-url="mercedesUrl"
@@ -76,8 +76,16 @@
 </template>
 
 <script setup lang="ts">
-import henriettaUrl from '@/assets/henrietta_leavitt_measuring_the_universe_poster.jpg';
-import mercedesUrl from '@/assets/video_extra_mercedes_poster.jpg';
+import henriettaUrl from '@/assets/video_metadata/henrietta_leavitt_measuring_the_universe_poster.jpg';
+import mercedesUrl from '@/assets/video_metadata/video_extra_mercedes_poster.jpg';
 import harvardUrl from '@/assets/harvard_plate_stacks@2x.webp';
 import refractorUrl from '@/assets/the_great_refractor@2x.webp';
+import { useModalsStore } from '@/stores/modals';
+
+const modalsStore = useModalsStore();
+
+const handleLopezMoralesClick = (e: MouseEvent) => {
+  e.preventDefault();
+  modalsStore.showLopezMorales = true;
+};
 </script>

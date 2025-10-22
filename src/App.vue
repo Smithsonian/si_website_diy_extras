@@ -19,5 +19,7 @@ configure({ tagId: 'G-CQCJ1860S7' });
     <footer>
       <DiyExtrasFooter />
     </footer>
+
+    <AllModals />
   </BApp>
 </template>
