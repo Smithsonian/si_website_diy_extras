@@ -15,5 +15,8 @@ configure({ tagId: 'G-CQCJ1860S7' });
     <main>
       <DiyExtrasIntro />
     </main>
+    <footer>
+      <DiyExtrasFooter />
+    </footer>
   </BApp>
 </template>
