@@ -4,7 +4,7 @@
       <BRow>
         <BCol cols="12" xxl="10" offset-xxl="1">
           <BCardGroup columns>
-            <a href="">
+            <a href="" @click="handleLeavittClick">
               <DiyExtrasTile
                 title="Henrietta Swan Leavitt: Measuring the Universe"
                 :img-url="henriettaUrl"
@@ -19,7 +19,7 @@
                   groundbreaking measurements that paved the way for understanding the scale of the
                   universe.
                 </p>
-                <p class="mb-0">Running time: 6:54</p>
+                <p class="mb-0">Running time: 7:02</p>
               </DiyExtrasTile>
             </a>
             <a href="" @click="handleLopezMoralesClick">
@@ -83,6 +83,11 @@ import refractorUrl from '@/assets/the_great_refractor@2x.webp';
 import { useModalsStore } from '@/stores/modals';
 
 const modalsStore = useModalsStore();
+
+const handleLeavittClick = (e: MouseEvent) => {
+  e.preventDefault();
+  modalsStore.showLeavitt = true;
+};
 
 const handleLopezMoralesClick = (e: MouseEvent) => {
   e.preventDefault();
