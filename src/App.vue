@@ -14,6 +14,7 @@ configure({ tagId: 'G-CQCJ1860S7' });
     </header>
     <main>
       <DiyExtrasIntro />
+      <DiyExtrasTileList />
     </main>
     <footer>
       <DiyExtrasFooter />
