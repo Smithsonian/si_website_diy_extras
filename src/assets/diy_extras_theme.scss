@@ -1,0 +1,122 @@
+// Speclab customizations before loading Bootstrap
+// Open Sans at the front with Bootstrap fallbacks behind
+$font-family-base:
+  'Open Sans',
+  system-ui,
+  -apple-system,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  'Noto Sans',
+  'Liberation Sans',
+  Arial,
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'Noto Color Emoji';
+
+// SASS custom variables
+// Laura "general" colors
+$gen-white: #ffffff; // ffffff is also Smithsonian white
+$gen-black: #000000;
+$gen-gold: #ffcd00; // ffcd00 is also Smithsonian gold
+$gen-grey: #a8a8b4;
+
+// Data Labs colors
+$dl-bright-purple: #3a3b75;
+$dl-dark-purple: #291a56;
+$dl-chartreuse: #d8f354;
+
+// Speclab colors
+$sl-slate-blue: #3a678a;
+$sl-royal-blue: #00456c;
+$sl-navy: #153353;
+$sl-light-blue: #3ad4ed;
+$sl-lighter-blue: #8ce7ff;
+
+// Speclab resources
+$slr-light-brown: #774e2b;
+$slr-dark-brown: #422a16;
+$slr-dark-grey: #5c5c64;
+$slr-light-grey: #edecf2;
+$slr-med-grey: #ccccd4;
+
+// Speclab extras
+$sle-blue-grey: #6d6daa;
+$sle-lavender: #c9c8ff;
+
+// DIY planet search
+$diy-brown: #594a40;
+$diy-blue: #36679c;
+$diy-red: #c02325;
+
+// DIY extras
+$diye-red: #c8514c;
+$diye-light-red: #eea9a3;
+
+// CSS variable versions
+:root {
+  --gen-white: #{$gen-white};
+  --gen-black: #{$gen-black};
+  --gen-gold: #{$gen-gold};
+  --gen-grey: #{$gen-grey};
+
+  --dl-bright-purple: #{$dl-bright-purple};
+  --dl-dark-purple: #{$dl-dark-purple};
+  --dl-chartreuse: #{$dl-chartreuse};
+
+  --sl-slate-blue: #{$sl-slate-blue};
+  --sl-royal-blue: #{$sl-royal-blue};
+  --sl-navy: #{$sl-navy};
+  --sl-light-blue: #{$sl-light-blue};
+  --sl-lighter-blue: #{$sl-lighter-blue};
+
+  --slr-light-brown: #{$slr-light-brown};
+  --slr-dark-brown: #{$slr-dark-brown};
+  --slr-dark-grey: #{$slr-dark-grey};
+  --slr-light-grey: #{$slr-light-grey};
+  --slr-med-grey: #{$slr-med-grey};
+
+  --sle-blue-grey: #{$sle-blue-grey};
+  --sle-lavender: #{$sle-lavender};
+
+  --diy-brown: #{$diy-brown};
+  --diy-blue: #{$diy-blue};
+  --diy-red: #{$diy-red};
+
+  --diye-red: #{$diye-red};
+  --diye-light-red: #{$diye-light-red};
+}
+
+// SASS Bootstrap overrides
+$primary: $diy-red;
+$secondary: $diye-light-red;
+$dark: $gen-black;
+$nav-pills-border-radius: 0;
+$modal-content-bg: $diye-light-red;
+$modal-header-border-width: 0;
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-vue-next/src/styles/styles.scss';
+
+// bootstrap-vue-next customization
+.toast-container {
+  margin-top: 3rem;
+}
+
+// Utility classes
+.bg-gen-black {
+  background-color: var(--gen-black) !important;
+}
+.bg-sle-blue-grey {
+  background-color: var(--sle-blue-grey) !important;
+}
+
+.bg-sle-lavender {
+  background-color: var(--sle-lavender) !important;
+}
+
+.text-dl-dark-purple {
+  color: var(--dl-dark-purple) !important;
+}

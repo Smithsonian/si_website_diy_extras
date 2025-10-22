@@ -1,5 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue-next/dist/bootstrap-vue-next.css';
+import './assets/diy_extras_theme.scss';
 import { createPinia } from 'pinia';
 import App from './App.vue';
 import { ViteSSG } from 'vite-ssg/single-page';

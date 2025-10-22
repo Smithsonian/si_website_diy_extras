@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { BApp } from 'bootstrap-vue-next';
+import { useHead } from '@unhead/vue';
+import { configure } from 'vue-gtag';
+
+useHead({ title: 'Extra resources | DIY Planet Search' });
+
+configure({ tagId: 'G-CQCJ1860S7' });
 </script>
 
 <template>
@@ -11,5 +16,3 @@ import { BApp } from 'bootstrap-vue-next';
     </p>
   </BApp>
 </template>
-
-<style scoped></style>
